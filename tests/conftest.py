@@ -49,7 +49,8 @@ def setup_browser(request):
         # command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
         # command_executor=f"http://{login}@176.108.250.152:4444/wd/hub,
         # command_executor=f"http://user1@176.108.250.152:4444/wd/hub",
-        command_executor=f"https://{login}@176.108.250.152:4444/wd/hub",
+        # command_executor=f"https://176.108.250.152:4444/wd/hub",
+        command_executor=f"http://{login}:{password}@176.108.250.152:4444/wd/hub",
         options=options
     )
 
