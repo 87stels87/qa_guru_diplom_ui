@@ -7,20 +7,21 @@
 >5) Мультипрофиль: возможность создать отдельные аккаунты для каждого члена семьи, добавив до пяти индивидуальных профилей с собственной историей просмотров.
 
 
-![main page screenshot](/ivi_ui_and_mobile_test_framework/pictures/base_page_web.jpg)
+![main page screenshot](images/screen/okko.png)
 
 
 ###  Используемые технологии
 <p align="center">
-  <code><img src="images/logo/python.svg" width="40" height="40"  alt="A-d-am" title="Python"></code>
-  <code><img src="images/logo/pytest.png" width="40" height="40"  alt="A-d-am" title="PyTest"></code>
-  <code><img src="images/logo/selene.png" width="40" height="40"  alt="A-d-am" title="Selene"></code>
-  <code><img src="images/logo/pycharm.png" width="40" height="40"  alt="A-d-am" title="PyCharm"></code>
-  <code><img src="images/logo/Jenkins.svg" width="40" height="40"  alt="A-d-am" title="Jenkins"></code>
-  <code><img src="images/logo/Selenoid.svg" width="40" height="40"  alt="A-d-am" title="Selenoid"></code>
-  <code><img src="images/logo/Allure_new.png" width="40" height="40"  alt="A-d-am" title="Allure Report"></code>
-  <code><img src="images/logo/allure_testops.png" width="40" height="40"  alt="A-d-am" title="Allure TestOps"></code>
-  <code><img src="images/logo/Telegram.svg" width="40" height="40"  alt="A-d-am" title="Telegram Bot"></code>
+  <code><img src="images/logo/python-original.svg" width="40" height="40" title="Python"></code>
+  <code><img src="images/logo/pytest-original.svg" width="40" height="40" title="PyTest"></code>
+  <code><img src="images/logo/selene.png" width="40" height="40" title="Selene"></code>
+  <code><img src="images/logo/pycharm.png" width="40" height="40"vtitle="PyCharm"></code>
+  <code><img src="images/logo/jenkins-original.svg" width="40" height="40" title="Jenkins"></code>
+  <code><img src="images/logo/selenoid.png" width="40" height="40" title="Selenoid"></code>
+  <code><img src="images/logo/Allure_Report.png" width="40" height="40" title="Allure Report"></code>
+  <code><img src="images/logo/AllureTestOps.png" width="40" height="40" title="Allure TestOps"></code>
+  <code><img src="images/logo/tg.png" width="40" height="40" title="Telegram Bot"></code>
+  <code><img src="images/logo/docker.png" width="40" height="40" title="Docker"></code>
 </p>
 
 ## Покрываемый функционал
