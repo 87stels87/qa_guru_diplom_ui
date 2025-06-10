@@ -11,7 +11,8 @@ from selene.support.shared import browser
 
 def open_main_page():
     with allure.step('Открыть главную страницу'):
-        browser.open('https://okko.tv/')
+        # browser.open('https://okko.tv/')
+        browser.open(browser.config.base_url)
 
 
 

@@ -22,6 +22,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
+    browser.config.base_url = 'https://okko.tv/'
     browser.config.window_width = 1920
     browser.config.window_height = 1080
     browser_version = request.config.getoption('--browser_version', default="127")
@@ -44,13 +45,14 @@ def setup_browser(request):
 
     login = os.getenv('LOGIN')
     password = os.getenv('PASSWORD')
+    url = os.getenv('URL')
 
     driver = webdriver.Remote(
         # command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
         # command_executor=f"http://{login}@176.108.250.152:4444/wd/hub,
         # command_executor=f"http://user1@176.108.250.152:4444/wd/hub",
         # command_executor=f"https://176.108.250.152:4444/wd/hub",
-        command_executor=f"http://{login}:{password}@176.108.250.152:4444/wd/hub",
+        command_executor=f"http://{login}:{password}@{url}/wd/hub",
         options=options
     )
 
