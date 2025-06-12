@@ -43,7 +43,7 @@
 #### Тесты запускаются в Jenkins (инфраструктура qa-guru). Selenoid развернут в докер-контейнере. Докер поднят на вирутальной машине сервиса https://cloud.ru/
 
 ### Локально
-Важно! Перед запуском нужно создать файл .env и указать там login, password и урл для selenoid 
+Перед запуском нужно создать файл .env и указать там login, password и урл для selenoid 
 
 
 Для запуска тестов локально, нужно выполнить следующие шаги
@@ -64,7 +64,7 @@ context=web pytest -m web
  - Выбрать версию хрома
  - Нажать на Build
 
-<img src="images/screenshots/Jenkins_build.png">
+<img src="images/screen/jenkins_1.png">
 
 ## Отчет о прохождении тестов (Allure)
 ### Локально
