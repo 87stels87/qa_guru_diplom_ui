@@ -92,6 +92,6 @@ allure serve tests/allure-results
 <img src="images/screen/tg.png">
 
 #### Нагрузка виртуальной машины (vCPU=2, RAM=4) во время прогона тест-кейсов:
-<img src="images/screen/tg.png">
-<img src="images/screen/tg.png">
+<img src="images/screen/proc1.png">
+<img src="images/screen/package.png">
 
