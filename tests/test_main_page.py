@@ -4,6 +4,7 @@ from pages.main_page import open_main_page, check_search_button_promo_code_be_vi
     check_url_after_click_on_subscribe_button, click_on_store_icon, check_section_new, click_on_promos_link, \
     check_visible_mail_in_promos_section
 
+
 @allure.epic('Тесты на главную страницу')
 @allure.story('Отображение маркетинговых элементов')
 @allure.title('Отображение кнопки Ввести промокод')
@@ -14,6 +15,7 @@ from pages.main_page import open_main_page, check_search_button_promo_code_be_vi
 def test_visible_promo_code_button(setup_browser):
     open_main_page()
     check_search_button_promo_code_be_visible()
+
 
 @allure.epic('Тесты на главную страницу')
 @allure.story('Отображение маркетинговых элементов')
@@ -26,6 +28,7 @@ def test_url_after_click_on_subscribe_button(setup_browser):
     open_main_page()
     check_url_after_click_on_subscribe_button()
 
+
 @allure.epic('Тесты на главную страницу')
 @allure.story('Отображение маркетинговых элементов')
 @allure.title('Проверка наименования электронной почты при нажатии на ссылку Акции и предложения')
@@ -37,6 +40,7 @@ def test_should_mail_in_promos(setup_browser):
     open_main_page()
     click_on_promos_link()
     check_visible_mail_in_promos_section()
+
 
 @allure.epic('Тесты на главную страницу')
 @allure.story('Отображение секции Новое в магазине при клике на ссылку Магазин')

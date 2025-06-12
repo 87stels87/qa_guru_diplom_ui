@@ -1,10 +1,11 @@
-import pytest
 import os
+
+import pytest
+from dotenv import load_dotenv
 from selene import browser
 from selenium import webdriver
-from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
-from dotenv import load_dotenv
+
 from utils import attach
 
 
@@ -28,11 +29,6 @@ def setup_browser(request):
     browser_version = request.config.getoption('--browser_version', default="127")
     options = Options()
 
-
-
-
-    # options.add_argument("--remote-allow-origins=*")
-
     selenoid_capabilities = {
         "browserName": "chrome",
         "browserVersion": browser_version,
@@ -48,10 +44,6 @@ def setup_browser(request):
     url = os.getenv('URL')
 
     driver = webdriver.Remote(
-        # command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
-        # command_executor=f"http://{login}@176.108.250.152:4444/wd/hub,
-        # command_executor=f"http://user1@176.108.250.152:4444/wd/hub",
-        # command_executor=f"https://176.108.250.152:4444/wd/hub",
         command_executor=f"http://{login}:{password}@{url}/wd/hub",
         options=options
     )
@@ -60,7 +52,6 @@ def setup_browser(request):
     yield browser
 
     attach.add_screenshot(browser)
-    # attach.add_logs(browser)
     attach.add_html(browser)
     attach.add_video(browser)
 

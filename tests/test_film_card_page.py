@@ -4,6 +4,9 @@ from pages.film_card_page import check_visible_buy_button, click_button_trailer,
     click_film_score, check_registration_form
 from pages.main_page import open_main_page, click_on_search_icon, input_name_film_and_click_by_search_resalt_card
 
+film_title = "Харбин"
+
+
 @allure.epic('Тесты на карточку фильма')
 @allure.story('Карточка фильма')
 @allure.title('Отображение элементов на карточке фильма')
@@ -14,8 +17,9 @@ from pages.main_page import open_main_page, click_on_search_icon, input_name_fil
 def test_visible_buy_button(setup_browser):
     open_main_page()
     click_on_search_icon()
-    input_name_film_and_click_by_search_resalt_card("Харбин")
+    input_name_film_and_click_by_search_resalt_card(film_title)
     check_visible_buy_button()
+
 
 @allure.epic('Тесты на карточку фильма')
 @allure.story('Карточка фильма')
@@ -27,9 +31,10 @@ def test_visible_buy_button(setup_browser):
 def test_open_video_player_after_click_button_trailer(setup_browser):
     open_main_page()
     click_on_search_icon()
-    input_name_film_and_click_by_search_resalt_card("Харбин")
+    input_name_film_and_click_by_search_resalt_card(film_title)
     click_button_trailer()
     check_open_video_player()
+
 
 @allure.epic('Тесты на карточку фильма')
 @allure.story('Карточка фильма')
@@ -41,8 +46,6 @@ def test_open_video_player_after_click_button_trailer(setup_browser):
 def test_transfer_on_registration_form_after_click_film_score(setup_browser):
     open_main_page()
     click_on_search_icon()
-    input_name_film_and_click_by_search_resalt_card("Харбин")
+    input_name_film_and_click_by_search_resalt_card(film_title)
     click_film_score()
     check_registration_form()
-
-

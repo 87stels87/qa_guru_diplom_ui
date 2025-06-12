@@ -1,9 +1,11 @@
 import allure
 
-from pages.main_page import open_main_page, click_on_search_icon, click_on_store_icon, check_section_new, \
-    check_visible_mail_in_promos_section, click_on_promos_link
+from pages.main_page import open_main_page, click_on_search_icon
 from pages.search_page import check_search_by_last_name_director, check_visible_collection_often_search, \
     check_search_by_name_film
+
+name_director = "Квентин Тарантино"
+film_title = "Твин Пикс"
 
 @allure.epic('Тесты на поиск')
 @allure.story('Отображение дополнительных секций')
@@ -17,6 +19,7 @@ def test_visible_collection_often_search(setup_browser):
     click_on_search_icon()
     check_visible_collection_often_search()
 
+
 @allure.epic('Тесты на поиск')
 @allure.story('Поиск фильма')
 @allure.title('Поиск фильма по наименованию')
@@ -27,7 +30,8 @@ def test_visible_collection_often_search(setup_browser):
 def test_search_by_name_film(setup_browser):
     open_main_page()
     click_on_search_icon()
-    check_search_by_name_film("Твин Пикс")
+    check_search_by_name_film(film_title)
+
 
 @allure.epic('Тесты на поиск')
 @allure.story('Поиск фильма')
@@ -39,7 +43,4 @@ def test_search_by_name_film(setup_browser):
 def test_search_by_last_name_director(setup_browser):
     open_main_page()
     click_on_search_icon()
-    check_search_by_last_name_director("Квентин Тарантино")
-
-
-
+    check_search_by_last_name_director(name_director)
