@@ -75,14 +75,14 @@ context=web pytest -m web
 allure serve allure-results
 ``` 
 Ниже представлен пример allure отчета 
-<img src="images/screenshots/allure_report_example_web.png">
+<img src="images/screen/report_1.png">
 
 Подробные инструкции по работе с allure можно найти по [ссылке](https://allurereport.org/docs/).
 ### Если тесты запускались в Jenkins
 
 Для получения отчета нужно нажать на иконку allure report'a в строке билда  
 У него будет точно такой же формат, как и при получении локально
-<img src="images/screenshots/allure_report_from_jenkins.png">
+<img src="images/screen/report_1.png">
 
 ### В проекте реализована интеграция с Allure TestsOps
 <img src="images/screenshots/allure_test_ops.png">
