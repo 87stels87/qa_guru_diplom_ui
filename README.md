@@ -64,15 +64,16 @@ context=web pytest -m web
  - Открыть [джобу](https://jenkins.autotests.cloud/job/C19-AndreyOok-diplom-ui/) в jenkins
  - Нажать на кнопку Build with Parameters
  - Выбрать версию хрома
+ - Выбрать окружение, где будут исполняться тесты
  - Нажать на Build
 
-<img src="images/screen/jenkins_1.png">
+<img src="images/screen/jenkins_parametrs.png">
 
 ## Отчет о прохождении тестов (Allure)
 ### Локально
 Для получения отчета нужно ввести команду 
 ```
-allure serve allure-results
+allure serve tests/allure-results
 ``` 
 Ниже представлен пример allure отчета 
 <img src="images/screen/report_1.png">
@@ -88,4 +89,9 @@ allure serve allure-results
 <img src="images/screenshots/allure_test_ops.png">
 
 ### В проекте настроена отправка краткого отчета в Telegram
-<img src="images/screenshots/tg_web_allure.png">
+<img src="images/screen/tg.png">
+
+#### Нагрузка виртуальной машины (vCPU=2, RAM=4) во время прогона тест-кейсов:
+<img src="images/screen/tg.png">
+<img src="images/screen/tg.png">
+
