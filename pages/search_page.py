@@ -3,7 +3,7 @@ from selene import have, be
 from selene.support.conditions.be import visible
 from selene.support.shared.jquery_style import s
 
-text_in_section_often_search = "'Часто ищут"
+text_in_section_often_search = "Часто ищут"
 
 def check_visible_collection_often_search():
     with allure.step('Проверка отображения секции Часто ищут'):
