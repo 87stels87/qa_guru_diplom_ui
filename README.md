@@ -56,7 +56,6 @@
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-context=web pytest -m web  
 ```
 
 ### С помощью [Jenkins](https://jenkins.autotests.cloud/job/C19-AndreyOok-diplom-ui/)
