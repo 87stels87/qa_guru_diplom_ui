@@ -15,7 +15,7 @@
   <code><img src="images/logo/python-original.svg" width="40" height="40" title="Python"></code>
   <code><img src="images/logo/pytest-original.svg" width="40" height="40" title="PyTest"></code>
   <code><img src="images/logo/selene.png" width="40" height="40" title="Selene"></code>
-  <code><img src="images/logo/pycharm.png" width="40" height="40"vtitle="PyCharm"></code>
+  <code><img src="images/logo/pycharm.png" width="40" height="40" title="PyCharm"></code>
   <code><img src="images/logo/jenkins-original.svg" width="40" height="40" title="Jenkins"></code>
   <code><img src="images/logo/selenoid.png" width="40" height="40" title="Selenoid"></code>
   <code><img src="images/logo/Allure_Report.png" width="40" height="40" title="Allure Report"></code>
@@ -77,7 +77,7 @@ allure serve tests/allure-results
 Ниже представлен пример allure отчета 
 <img src="images/screen/report_1.png">
 
-Подробные инструкции по работе с allure можно найти по [ссылке](https://allurereport.org/docs/)..
+Подробные инструкции по работе с allure можно найти по [ссылке](https://allurereport.org/docs/).
 ### Если тесты запускались в Jenkins
 
 Для получения отчета нужно нажать на иконку allure report'a в строке билда  
